@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <!-- Enlace al archivo CSS con los estilos del sitio web -->
+    <link rel="stylesheet" href="./css/estilos.css"> 
+</head>
+<body>
+    <!-- Cabecera del sitio web-->
+    <header>
+        <!-- Encabezado principal del sitio web -->
+        <h1>Información sobre Madrid capital</h1>
+    </header>
+
+    <!-- Contenido general del sitio web -->
+    <main>
+        <!-- Sección para la lista -->
+        <section>
+            <!-- Encabezado de la sección -->
+            <h2>Lista de lugares que visitar</h2>
+            <!-- Contenido de la sección -->
+            <div>
+                <ul>
+                    <li>Puerta de alcalá</li>
+                    <li>Parque del retiro</li>
+                    <li>Plaza de los toros de las ventas</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección para la "Historia de Madrid" -->
+        <section>
+            <!-- Encabezado de la sección -->
+            <h2>Historia de Madrid</h2>
+            <!-- Contenido de la sección -->
+            <div>
+                <p>
+                    A pricipios del siglo XXI, la ciudad siguió abordando nuevos retos: mantenimiento de la población
+                    <br>
+                    dentro del nucleo urbano (Madrid es el municipio de España en el que aumento el precio de la vivienda ha sido mayor)
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección para la tabla con las imágenes -->
+        <section>
+            <!-- Encabezado de la sección -->
+            <h2>Madrid en imágenes</h2>
+            <!-- Contenido de la sección -->
+            <div>
+                <table class="tabla_imagenes">
+                    <tr>
+                        <td>
+                            <img src="./images/retiro.jpg" alt="Imagen del retiro de Madrid" height="120" width="120">
+                        </td>
+                        <td>
+                            <img src="./images/granvia.jpg" alt="Imagen de La gran vía de Madrid" height="120" width="120">
+                        </td>
+                        <td>
+                            <img src="./images/vistaaerea.jpg" alt="Imagen aerea de Madrid" height="120" width="120">
+                        </td>
+                        <td>
+                            <img src="./images/nocturno.jpg" alt="Imagen nocturna de Madrid" height="120" width="120">
+                        </td>
+                    </tr>
+                    <tr class="texto_imagen">
+                        <td>El retiro</td>
+                        <td>La gran vía</td>
+                        <td>Vista aerea</td>
+                        <td>Madrid nocturno</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- Sección para la tabla con el tiempo -->
+        <section>
+            <!-- Encabezado de la sección -->
+            <h2>El tiempo en Madrid</h2>
+            <!-- Contenido de la sección -->
+            <div>
+                <table class="tabla_temperaturas">
+                    <caption>Temperaturas</caption>
+                    <thead>
+                        <tr>
+                            <th>Día</th>
+                            <th>Temperatura máxima</th>
+                            <th>Temperatura mínima</th>
+                            <th>Lluvias</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01/01/2011</td>
+                            <td>14 ºC</td>
+                            <td>-2 ºC</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td>02/01/2011</td>
+                            <td>11 ºC</td>
+                            <td>-3 ºC</td>
+                            <td>10%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Sección para el formulario -->
+        <section>
+            <!-- Encabezado de la sección -->
+            <h2>Recibir información a través de correo electrónico</h2>
+            <!-- Contenido de la sección -->
+            <form id="formulario" action="#" method="get">
+                <p>Rellena con tu correo electrónico el siguiente formulario y te enviaremos un email con ofertas en Madrid</p>
+                <div class="campos">
+                    <div class="correo_electronico">
+                        <label for="correo">Correo electrónico: </label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    
+    </main>
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* ESTILOS GENERALES */
+body{
+    margin: auto;
+    min-height: 100%;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* ESTILOS COMUNES PARA LAS SECCIONES */
+main{
+    width: 100%;
+    padding-left: 0.5em;
+    display: flex; /* Estilo de la interfaz de la etiqueta MAIN */
+    flex-direction: column; /* Distribución de los section */
+    gap: 1.2em; /* Espaciado entre los section */
+}
+
+main > section{
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+/* ESTILOS DE LA LISTA */
+ul > li{
+    font-size: large;
+    font-style: italic;
+    padding: 0.2em;
+}
+
+
+/* ESTILOS PARA LA TABLA DE IMÁGENES */
+.tabla_imagenes th, .tabla_imagenes td{
+    border: 1px solid black; /* Se añade un borde con línea recta de color negro y un 1px de grosor */
+    border-collapse: collapse;
+}
+
+.texto_imagen > td{
+    text-align: center;
+}
+
+img{
+    width: 200px; /* En HTML se debe incluir el ancho original de la imagen, el redimensionamiento se lo damos aquí en CSS */
+    height: 200px; /* En HTML se debe incluir el alto original de la imagen, el redimensionamiento se lo damos aquí en CSS */
+}
+
+/* ESTILOS PARA LA TABLA DE TEMPERATURAS */
+.tabla_temperaturas {
+    border-collapse: collapse; /* Elimina espacios entre celdas */
+}
+
+.tabla_temperaturas caption {
+    font-weight: bold; /* Texto en negrita */
+    font-size: larger; /* Aumenta el tamaño de la letra */
+    padding: 0.5em; /* Espaciado interno */
+    background-color: gray;; /* Color de fondo igual al encabezado */
+    color: white; /* Color del texto */
+    border: 1px solid black; /* Borde similar al de la tabla */
+    margin-bottom: -1px; /* Ajusta visualmente para conectar con la tabla */
+}
+
+.tabla_temperaturas th,
+.tabla_temperaturas td {
+    border: 1px solid black; /* Bordes de la tabla */
+    text-align: center; /* Centra el texto */
+    padding: 0.5em; /* Espaciado interno */
+    text-align: center; /* Alineación centrada del texto en la celda */
+}
+
+.tabla_temperaturas th{
+    background-color: darkgray; 
+}
+
+.tabla_temperaturas td{
+    background-color: lightgray;
+}
+
+/* ESTILOS FORMULARIO */
+#formulario{
+    margin-bottom: 2em;
+    max-width: fit-content;
+}
+
+.campos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
+}
+
+#correo{
+    padding: 0.1em;
+    box-sizing: border-box;/* Incluye padding en el tamaño total */
+    
+}
